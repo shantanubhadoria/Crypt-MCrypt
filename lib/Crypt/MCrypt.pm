@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 package Crypt::MCrypt;
 
 # PODNAME: Crypt::MCrypt
@@ -5,7 +7,7 @@ package Crypt::MCrypt;
 # COPYRIGHT
 # VERSION
 
-use 5.014002;
+use 5.010;
 
 # Dependencies
 use Mo;
@@ -112,11 +114,11 @@ __END__
 = DESCRIPTION
 
 This is a perl interface to libmcrypt c library. It exposes the crypto functions provided by the libmcrypt library in a perl interface 
-with a binding code that accoutns for null C strings in ciphertext or plain text.
+with a binding code that accounts for null C strings in ciphertext or plain text.
 
 = USAGE
 
-* This module provides a oibject oriented interface to the libmcrypt library. It uses Mo, a scaled down version of Moose without any data checks to improve speed.
+* This module provides a object oriented interface to the libmcrypt library. It uses Mo, a scaled down version of Moose without any data checks to improve speed.
 
 = see ALSO
 
