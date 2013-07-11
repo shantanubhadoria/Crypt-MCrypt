@@ -92,6 +92,7 @@ char *_mcrypt__encrypt(algorithm,mode,plaintext,key,plaintext_len,IV)
       hextext[v*2] = byte[0];
       hextext[v*2+1] = byte[1];
     }
+    free(buffer);
     // return hexcode to avoid truncation when there are null charachters 
     // in returned ciphertext string.
     RETVAL = hextext;
@@ -123,6 +124,7 @@ char *_mcrypt__decrypt(algorithm,mode,ciphertext,key,ciphertext_len,IV)
       hextext[v*2] = byte[0];
       hextext[v*2+1] = byte[1];
     }
+    free(buffer);
     // return hexcode to avoid truncation when there are null charachters 
     // in returned plaintext string.
     RETVAL = hextext;
