@@ -4,6 +4,12 @@ Changes for Crypt::MCrypt
 
 {{$NEXT}}
 
+
+0.04
+
+	- 2013-07-11 08:48:57 Asia/Singapore
+
+
 Adding Tests for DES ECB 
 
 0.03
