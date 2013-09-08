@@ -63,12 +63,12 @@ MODULE = Crypt::MCrypt		PACKAGE = Crypt::MCrypt	PREFIX = _mcrypt_
 PROTOTYPES: DISABLE
 
 char *_mcrypt__encrypt(algorithm,mode,plaintext,key,plaintext_len,IV)
-    char *algorithm;
-    char *mode;
-    char *plaintext;
-    char *key;
-    int  &plaintext_len;
-    char *IV;
+    char *algorithm
+    char *mode
+    char *plaintext
+    char *key
+    int  &plaintext_len
+    char *IV
   INIT:
     char* buffer;
     int keysize=24;
@@ -100,12 +100,12 @@ char *_mcrypt__encrypt(algorithm,mode,plaintext,key,plaintext_len,IV)
     RETVAL
     
 char *_mcrypt__decrypt(algorithm,mode,ciphertext,key,ciphertext_len,IV)
-    char *algorithm;
-    char *mode;
-    char *ciphertext;
-    char *key;
-    int  &ciphertext_len;
-    char *IV;
+    char *algorithm
+    char *mode
+    char *ciphertext
+    char *key
+    int  &ciphertext_len
+    char *IV
   INIT:
     char* buffer;
     int keysize=24;
